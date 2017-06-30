@@ -53,3 +53,51 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+
+body, html, main {
+    height: 100%;
+}
+
+.cd-color-2{
+  //background-color:lightgreen;
+}
+
+.cd-color-3{
+  //background-color:lightblue;
+}
+ 
+.cd-fixed-bg {
+	min-height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+        margin-bottom: -10px;
+        color:white;
+}
+ 
+.cd-fixed-bg.cd-bg-1 {
+  background-image: url("https://public-media.smithsonianmag.com/filer/89/47/8947cd5c-ac01-4c0e-891a-505517cc0663/istock-540753808.jpg");
+}
+
+.cd-fixed-bg.cd-bg-3 {
+  background-image: url("https://cdn.pixabay.com/photo/2013/08/31/18/13/rose-177890_960_720.jpg");
+  height: 100vh;
+}
+.cd-fixed-bg.cd-bg-5 {
+  background-image: url("https://public-media.smithsonianmag.com/filer/89/47/8947cd5c-ac01-4c0e-891a-505517cc0663/istock-540753808.jpg");
+}
+
+.cd-fixed-bg.cd-bg-7 {
+  background-image: url("https://cdn.pixabay.com/photo/2013/08/31/18/13/rose-177890_960_720.jpg");
+  height: 100vh;
+}
+.cd-fixed-bg.cd-bg-9 {
+  background-image: url("https://public-media.smithsonianmag.com/filer/89/47/8947cd5c-ac01-4c0e-891a-505517cc0663/istock-540753808.jpg");
+}
+
+.cd-scrolling-bg {
+	min-height: 100%;
+  margin-bottom:-16px;
+}
