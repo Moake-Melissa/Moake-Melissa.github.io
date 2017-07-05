@@ -66,59 +66,25 @@ body, html, main {
 .cd-color-3{
   //background-color:lightblue;
 }
-
-.menu a{
-    font-size: 1.2em;
-    &.button {
-        border-radius: 15px;
-        margin-right: 30px;
-        padding: 0.7rem 2rem;
-    }
-}
-
-.cd-bg-1 > .row> .columns{
-    height: 86vh;
-}
-
-.cd-fixed-bg:not(.cd-bg-9) .row {
-    display:inline-block;
-}
-
-.cd-fixed-bg:not(.cd-bg-9) .columns{
-    height: 100vh;
-    vertical-align: middle;
-    display: table-cell;
-}
-
-.sticky {
-  width: 100%;
-}
  
 .cd-fixed-bg {
-    min-height: 100%;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    color:white;
-    text-align:center;
-        
-        h1{
-            text-shadow: 2px -2px 12px #2e383e;
-            font-size: 6em;
-        }
-        h2{
-            font-family: 'Oleo Script', cursive;
-            font-size: 4em;
-        }
+	min-height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+        margin-bottom: -10px;
+        color:white;
 }
  
 .cd-fixed-bg.cd-bg-1 {
+<<<<<<< HEAD
   background-image: url("../images/pedro-lastra-143326.jpg");
 }
 
 .cd-fixed-bg.cd-bg-3 {
   background-image: url("../images/breakfast.jpeg");
+  height: 100vh;
 }
 .cd-fixed-bg.cd-bg-5 {
   background-image: url("../images/aj-garcia-253576.jpg");
@@ -126,25 +92,32 @@ body, html, main {
 
 .cd-fixed-bg.cd-bg-7 {
   background-image: url("../images/bed.jpeg");
+  height: 100vh;
 }
 .cd-fixed-bg.cd-bg-9 {
   background-image: url("../images/stream.jpeg");
+=======
+  background-image: url("https://public-media.smithsonianmag.com/filer/89/47/8947cd5c-ac01-4c0e-891a-505517cc0663/istock-540753808.jpg");
+}
+
+.cd-fixed-bg.cd-bg-3 {
+  background-image: url("https://cdn.pixabay.com/photo/2013/08/31/18/13/rose-177890_960_720.jpg");
+  height: 100vh;
+}
+.cd-fixed-bg.cd-bg-5 {
+  background-image: url("https://public-media.smithsonianmag.com/filer/89/47/8947cd5c-ac01-4c0e-891a-505517cc0663/istock-540753808.jpg");
+}
+
+.cd-fixed-bg.cd-bg-7 {
+  background-image: url("https://cdn.pixabay.com/photo/2013/08/31/18/13/rose-177890_960_720.jpg");
+  height: 100vh;
+}
+.cd-fixed-bg.cd-bg-9 {
+  background-image: url("https://public-media.smithsonianmag.com/filer/89/47/8947cd5c-ac01-4c0e-891a-505517cc0663/istock-540753808.jpg");
+>>>>>>> 5685156d319bda87b277f3bf39ebca028e2a8e3d
 }
 
 .cd-scrolling-bg {
-    min-height: 100%;
-    margin-bottom:-16px;
-    background-color: #2e383e;
+	min-height: 100%;
+  margin-bottom:-16px;
 }
-
-.menu-text a{
-    color:white;
-    &:hover{
-        color: #f7971c;
-    }
-}
-
-.menu .active>a{
-    background:none;
-}
-    
