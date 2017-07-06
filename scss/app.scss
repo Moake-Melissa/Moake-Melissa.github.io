@@ -5,8 +5,8 @@
 @import 'motion-ui';
 
 @include foundation-global-styles;
-//@include foundation-grid;
-// @include foundation-flex-grid;
+@include foundation-grid;
+//@include foundation-flex-grid;
 @include foundation-xy-grid-classes;
 @include foundation-typography;
 @include foundation-button;
@@ -72,7 +72,9 @@ body, html, main {
     &.button {
         border-radius: 15px;
         margin-right: 30px;
-        padding: 0.7rem 2rem;
+        width: 170px;
+        word-wrap: break-word;
+        white-space: normal;
     }
 }
 
@@ -80,14 +82,15 @@ body, html, main {
     height: 86vh;
 }
 
-.cd-fixed-bg:not(.cd-bg-9) .row {
+.cd-fixed-bg > .row {
     display:inline-block;
 }
 
-.cd-fixed-bg:not(.cd-bg-9) .columns{
+.cd-fixed-bg > .row > .columns{
     height: 100vh;
     vertical-align: middle;
     display: table-cell;
+    float:none;
 }
 
 .sticky {
@@ -133,9 +136,10 @@ body, html, main {
 }
 
 .cd-scrolling-bg {
-    min-height: 100%;
+    min-height: 80%;
     margin-bottom:-16px;
     background-color: #2e383e;
+    padding:140px;
 }
 
 .menu-text a{

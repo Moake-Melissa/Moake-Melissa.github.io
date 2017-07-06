@@ -4,7 +4,7 @@ $(document).foundation();
 //Example taken from https://codepen.io/dudleystorey/pen/qEoKzZ
 var bgImageArray = ["aj-garcia-253576.jpg", "elk.jpeg", "matt-ragland-82514.jpg"],
 base = "images/",
-secs = 8;
+secs = 4;
 bgImageArray.forEach(function(img){
     new Image().src = base + img; 
     // caches images, avoiding white flash between background replacements
@@ -23,3 +23,25 @@ function backgroundSequence() {
 }
 backgroundSequence();
 //End of Example
+
+function menuTile(){
+    if (document.getElementById("mobileMenu").style.display !== "none"){
+        $(".top-bar .menu").addClass("is-visible");
+        $(".top-bar .menu .button").css("margin-right", "0px");
+        $(".top-bar .menu .button").css("width", "inherit");
+        console.log("mobile");
+    }
+    else if (document.getElementById("mobileMenu").style.display === "none"){
+        $(".top-bar .menu").removeClass("is-visible");
+        $(".top-bar .menu .button").css("margin-right", "30px");
+        $(".top-bar .menu .button").css("width", "170px");
+        console.log("computer");
+    }
+}
+
+menuTile();
+
+
+$(window).resize(function(){ 
+    menuTile();
+});
