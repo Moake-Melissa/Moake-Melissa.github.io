@@ -1,5 +1,7 @@
 $(document).foundation();
 
+
+//Example taken from https://codepen.io/dudleystorey/pen/qEoKzZ
 var bgImageArray = ["aj-garcia-253576.jpg", "elk.jpeg", "matt-ragland-82514.jpg"],
 base = "images/",
 secs = 8;
@@ -20,3 +22,4 @@ function backgroundSequence() {
 	}
 }
 backgroundSequence();
+//End of Example
