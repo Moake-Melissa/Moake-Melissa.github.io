@@ -16,7 +16,7 @@ function backgroundSequence() {
 			document.getElementById("gallery").style.background = "url(" + base + bgImageArray[k] + ") no-repeat center center fixed";
 			document.getElementById("gallery").style.backgroundSize ="cover";
 		if ((k + 1) === bgImageArray.length) { setTimeout(function() { backgroundSequence() }, (secs * 1000))} else { k++; }			
-		}, (secs * 1000) * i)	
+		}, (secs * 1000) * i);	
 	}
 }
 backgroundSequence();
