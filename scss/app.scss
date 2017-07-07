@@ -59,14 +59,6 @@ body, html, main {
     height: 100%;
 }
 
-.cd-color-2{
-  //background-color:lightgreen;
-}
-
-.cd-color-3{
-  //background-color:lightblue;
-}
-
 .menu a{
     font-size: 1.2em;
     &.button {
@@ -78,19 +70,19 @@ body, html, main {
     }
 }
 
-.cd-bg-1 > .row> .columns{
-    height: 86vh;
-}
-
-.cd-fixed-bg > .row {
+.cd-fixed-bg:not(.cd-bg-9) > .row {
     display:inline-block;
 }
 
-.cd-fixed-bg > .row > .columns{
-    height: 100vh;
+.cd-fixed-bg:not(.cd-bg-9) > .row > .columns{
+    height: 86vh;
     vertical-align: middle;
     display: table-cell;
     float:none;
+}
+
+.cd-fixed-bg.cd-bg-9 > .row > .columns{
+    margin-top: 30px;
 }
 
 .sticky {
@@ -108,11 +100,23 @@ body, html, main {
         
         h1{
             text-shadow: 2px -2px 12px #2e383e;
-            font-size: 6em;
+            font-size: 2.875rem;
+            @media screen and #{breakpoint(medium)} {
+                font-size: 5em;
+            }
+            @media screen and #{breakpoint(large)} {
+                font-size: 6em;
+            }
         }
         h2{
             font-family: 'Oleo Script', cursive;
-            font-size: 4em;
+            font-size: 1.925rem;
+            @media screen and #{breakpoint(medium)} {
+                font-size: 3em;
+            }
+            @media screen and #{breakpoint(large)} {
+                font-size: 4em;
+            }
         }
 }
  
@@ -133,13 +137,19 @@ body, html, main {
 }
 .cd-fixed-bg.cd-bg-9 {
   background-image: url("../images/stream.jpeg");
+  min-height: 96%;
 }
 
 .cd-scrolling-bg {
-    min-height: 80%;
     margin-bottom:-16px;
     background-color: #2e383e;
-    padding:140px;
+    padding:25px;
+    @media screen and #{breakpoint(medium)} {
+        padding:80px;
+    }
+    @media screen and #{breakpoint(large)} {
+        padding:140px;
+    }
 }
 
 .menu-text a{
@@ -151,4 +161,15 @@ body, html, main {
 
 .menu .active>a{
     background:none;
+}
+
+footer{
+    background-color: #2e383e;
+    text-align:center;
+    padding: 0px 20px;
+}
+
+footer .end {
+    margin-top: -20px;
+    display: block;
 }

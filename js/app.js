@@ -29,13 +29,11 @@ function menuTile(){
         $(".top-bar .menu").addClass("is-visible");
         $(".top-bar .menu .button").css("margin-right", "0px");
         $(".top-bar .menu .button").css("width", "inherit");
-        console.log("mobile");
     }
     else if (document.getElementById("mobileMenu").style.display === "none"){
         $(".top-bar .menu").removeClass("is-visible");
         $(".top-bar .menu .button").css("margin-right", "30px");
         $(".top-bar .menu .button").css("width", "170px");
-        console.log("computer");
     }
 }
 
