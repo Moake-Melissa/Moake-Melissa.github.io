@@ -79,8 +79,8 @@ $foundation-palette: (
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
-$black: #0a0a0a;
-$white: #fefefe;
+$black: #000000;
+$white: #ffffff;
 $body-background: $white;
 $body-font-color: $white;
 $body-font-family: 'Quicksand', sans-serif; //'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
@@ -149,10 +149,10 @@ $header-styles: (
   medium: (
     'h1': ('font-size': 54),
     'h2': ('font-size': 46),
-    'h3': ('font-size': 37),
-    'h4': ('font-size': 31),
-    'h5': ('font-size': 26),
-    'h6': ('font-size': 22),
+    'h3': ('font-size': 31),
+    'h4': ('font-size': 35),
+    'h5': ('font-size': 20),
+    'h6': ('font-size': 16),
   ),
 );
 $header-text-rendering: optimizeLegibility;

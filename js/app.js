@@ -39,7 +39,6 @@ function menuTile(){
 
 menuTile();
 
-
 $(window).resize(function(){ 
     menuTile();
 });
