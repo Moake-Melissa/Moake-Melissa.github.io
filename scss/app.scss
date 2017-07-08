@@ -182,6 +182,11 @@ footer .end {
     text-align: center;
 }
 
-img.thumbnail{
-    
+.column:last-child:not(:first-child), .columns:last-child:not(:first-child){
+       float: left;
+}
+
+.submitButton{
+    width:100%;
+    font-size: 1.3em;
 }
